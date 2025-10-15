@@ -3,6 +3,7 @@ import { VideoHeader } from '@/components/VideoHeader'
 import { MaterialsCard } from '@/components/MaterialsCard'
 import { Comments } from '@/components/Comments'
 import { CurriculumSidebar } from '@/components/CurriculumSidebar'
+import ClearQuizStorageOnReload from '@/components/ClearQuizStorageOnReload'
 
 type Props = { params: { id: string } }
 
@@ -13,6 +14,7 @@ export default function CoursePage({ params }: Props) {
     <main className="mx-auto max-w-screen-xl py-6 px-2">
       <nav className="mb-4 text-xs text-gray-500">Home › Courses › Course Details</nav>
       <h1 className="mb-4 text-2xl font-semibold">{course.title}</h1>
+      <ClearQuizStorageOnReload />
 
       <div className="grid gap-6 lg:grid-cols-3">
         {/* القسم الأيسر */}
