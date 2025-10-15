@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Quiz } from '@/lib/types'
+import { LeaderboardCallout } from './LeaderboardCallout'
 
 type Props = {
   open: boolean
@@ -120,7 +121,7 @@ export default function QuizModal({
         <div className="mx-auto mb-5 w-max rounded-lg bg-yellow-400/90 px-4 py-2 text-sm font-medium text-white">
           ⏱ {mmss}
         </div>
-
+<LeaderboardCallout/>
         <div className="mb-5 flex items-center justify-center gap-4">
           {questions.map((_, idx) => (
             <button
