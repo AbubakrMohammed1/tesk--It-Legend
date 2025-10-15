@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Welcome to the Demo!",
+    "intro": "This is a multilingual Next.js site using next-intl.",
+    "learn": "Learn About Us",
+    "contact": "Contact Us"
+  },
+   "mus": {
+    "title": "Welcome to the Demo!",
+    "intro": "This is a multilingual Next.js site using next-intl.",
+    "learn": "Learn About Us",
+    "contact": "Contact Us"
+  }
+}

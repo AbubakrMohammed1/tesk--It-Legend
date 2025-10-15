@@ -1,0 +1,19 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  strokeWidth={1.5}
+  stroke="currentColor"
+  className="w-5 h-5 text-gray-500"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M19.5 14.25v-6.637a1.5 1.5 0 0 0-.44-1.06l-4.613-4.613A1.5 1.5 0 0 0 13.387 1.5H6.75A1.5 1.5 0 0 0 5.25 3v18a1.5 1.5 0 0 0 1.5 1.5h10.5a1.5 1.5 0 0 0 1.5-1.5v-6.75z"
+  />
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M13.5 2.25V6a1.5 1.5 0 0 0 1.5 1.5h3.75"
+  />
+</svg>
