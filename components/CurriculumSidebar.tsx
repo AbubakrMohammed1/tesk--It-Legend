@@ -27,19 +27,20 @@ export function CurriculumSidebar({
       <div className="mb-2 rounded-lg p-4"><ProgressBar value={progress} /></div>
 
       {curriculum.map(s => (
-        <div key={s.id} className="mb-5 rounded-lg border bg-white">
-          <div className="border-b p-4">
+        <div key={s.id} className="mb-5 rounded-lg border border-gray-200  bg-white">
+          <div className="border-b border-gray-200  p-4">
             <p className="text-lg font-medium">{s.title}</p>
             <p className="w-[75%] text-sm text-gray-500">{s.subtitle}</p>
           </div>
 
           <ol className="p-2">
             {s.items.map(it => (
-              <li key={it.id} className="flex items-center justify-between rounded px-2 py-2 hover:bg-gray-50">
                 <button
+                 key={it.id}
                   onClick={() => it.quizId && openQuiz(it.quizId, it.questions)}
-                  className="flex items-center gap-2 text-left"
+                  className="flex items-center w-full justify-between rounded px-2 py-2 hover:bg-gray-50"
                 >
+              <div className="flex items-center gap-2 text-left  ">
                <svg
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
@@ -61,13 +62,14 @@ export function CurriculumSidebar({
 </svg>
 
                   <span className="p-2 text-sm">{it.title}</span>
-                </button>
 
-                <div className="flex items-center gap-2">
+
+              </div>
+               <div className="flex items-center gap-2">
                   {it.questions && <span className="rounded bg-emerald-50 px-2 py-0.5 text-[10px] text-emerald-700">{it.questions} QUESTION</span>}
                   {it.minutes && <span className="rounded bg-rose-50 px-2 py-0.5 text-[10px] text-rose-700">{it.minutes} MINUTES</span>}
                 </div>
-              </li>
+                </button>
             ))}
           </ol>
         </div>

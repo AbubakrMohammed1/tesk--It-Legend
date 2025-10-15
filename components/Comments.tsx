@@ -9,7 +9,7 @@ export function Comments({ thread }: { thread: Comment[] }) {
   const [text, setText] = useState('')
 
   return (
-    <div className="rounded-lg border bg-white p-4">
+    <div className="rounded-lg border border-gray-200  bg-white p-4">
       <h2 className="mb-4 text-base font-medium">Comments</h2>
 
       <ul className="space-y-4">
@@ -56,7 +56,7 @@ export function Comments({ thread }: { thread: Comment[] }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Write a comment"
-          className="min-h-[110px] w-full resize-none rounded border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-600"
+          className="min-h-[110px] w-full border-gray-200  resize-none rounded border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-emerald-600"
         />
         <button
           type="submit"

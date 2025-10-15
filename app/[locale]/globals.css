@@ -3,3 +3,7 @@
 body{
     background-color: #f5f9fa;
 }
+html{
+    scroll-behavior: smooth !important;
+
+}
